@@ -6,6 +6,7 @@ import pl.mariosendemail.sendemail.mail.services.EmailSendService;
 
 @Controller
 public class EmailController {
+
     private final EmailSendService emailSendService;
     private final TemplateEngine templateEngine;
 
