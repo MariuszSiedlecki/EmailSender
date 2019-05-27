@@ -14,7 +14,7 @@ HELP.md
 
 ### IntelliJ IDEA ###
 .idea
-.gitignore
+*.xml
 .build.gradle
 settings.gradle
 gradlew.bat
