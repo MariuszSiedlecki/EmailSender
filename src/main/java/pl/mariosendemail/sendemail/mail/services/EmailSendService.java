@@ -12,7 +12,6 @@ import javax.mail.internet.MimeMessage;
 @Service
 public class EmailSendService implements EmailSender {
 
-
     private JavaMailSender javaMailSender;
 
     @Value("${email.replyTo}")
@@ -26,7 +25,7 @@ public class EmailSendService implements EmailSender {
     }
 
     @Override
-    public void senderEmail(String to, String subject, String body) {
+    public void sendEmail(String to, String subject, String content) {
         MimeMessage mail = javaMailSender.createMimeMessage();
 
         try {
@@ -35,11 +34,11 @@ public class EmailSendService implements EmailSender {
             helper.setReplyTo(replyTo);
             helper.setFrom(from);
             helper.setSubject(subject);
-            helper.setText(body, true);
+            helper.setText(content, true);
         } catch (MessagingException e) {
             e.printStackTrace();
         }
         javaMailSender.send(mail);
-    }
 
+    }
 }

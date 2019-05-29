@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email sender</title>
+
+    <style>
+        .section-content {
+            text-align: center;}
+
+        #contact {
+            font-family: 'Teko', sans-serif;
+            padding-top: 60px;
+            width: 100%;
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(to left, maroon, black);}
+
+        .contact-section {
+            padding-top: 40px;}
+
+        .contact-section .col-md-6 {
+            width: 50%;}
+
+        .form-line {
+            border-right: 1px solid #B29999;}
+
+        .form-group {
+            margin-top: 10px;
+            color: white;}
+        label {
+            font-size: 1.3em;
+            line-height: 1em;
+            font-weight: normal;}
+
+        .form-control {
+            font-size: 1.3em;
+            color: #080808;}
+
+        textarea.form-control {
+            height: 135px;}
+
+        .submit {
+            font-size: 1.1em;
+            float: right;
+            width: 150px;
+            background-color: transparent;
+            color: #fff;}
+
+    </style>
+</head>
+
+<body>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<section id="contact">
+    <div class="section-content">
+        <h3 class="section-header" style="color: white">Email sender </h3>
+        <h4 style="color: white">Send sample email </h4>
+    </div>
+
+    <div class="contact-section">
+        <div class="container">
+            <form action="/send" method="post">
+                <div class="col-md-6 form-line">
+                    <div class="form-group">
+                        <label for="exampleInputEmail">Email Address</label>
+                        <input type="email" name="address" class="form-control" id="exampleInputEmail"
+
+                               placeholder=" Enter Email id">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" class="form-control" id="subject" placeholder=" Enter your subject"
+
+                               name="subject">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="description"> Message</label>
+                        <textarea class="form-control" id="description" name="body"
+                                  placeholder="Enter Your Message"></textarea>
+                    </div>
+                    <div>
+                        <a href="/">
+                            <button type="button" class="btn btn-default submit"><i class="fa fa-paper-plane"
+                                                                                    aria-hidden="true"></i>back to home
+                            </button>
+                        </a>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-default submit"><i class="fa fa-paper-plane"
+                                                                                aria-hidden="true"></i> Send Message
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+</section>
+
+</body>
+</html>

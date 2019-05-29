@@ -1,5 +1,5 @@
 package pl.mariosendemail.sendemail.mail;
 
-public interface EmailSender {
-    void senderEmail(String to, String subject, String body);
+public interface EmailSender  {
+    void sendEmail(String to, String subject, String content);
 }

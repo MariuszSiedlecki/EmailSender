@@ -5,13 +5,13 @@ public class MyEmail {
     private String subject;
     private String body;
 
-    public MyEmail() {
-    }
-
     public MyEmail(String address, String subject, String body) {
         this.address = address;
         this.subject = subject;
         this.body = body;
+    }
+
+    public MyEmail() {
     }
 
     public String getAddress() {
@@ -37,4 +37,6 @@ public class MyEmail {
     public void setBody(String body) {
         this.body = body;
     }
+
+
 }

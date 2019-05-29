@@ -12,15 +12,15 @@ HELP.md
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
+###\\ IntelliJ IDEA ###
 .idea
 *.xml
 .build.gradle
 settings.gradle
 gradlew.bat
 build.gradle
-.gitignore
-
+config.properties
+src/main/resources/config.properties
 *.iws
 *.iml
 *.ipr
